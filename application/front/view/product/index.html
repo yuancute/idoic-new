@@ -1,0 +1,160 @@
+
+
+<!-----------------middle1------------------>
+<style>
+    .list-page {
+        text-align: center;
+        padding: 15px 15px;
+    }
+
+    .pagination {
+        float: right;
+        margin: 0 !important;
+        padding: 10px 10px;
+        background: #fff;
+    }
+
+    .pagination li {
+        border: 1px solid #e6e6e6;
+        padding: 3px 8px;
+        display: inline-block;
+
+    }
+    .pagination li span{
+        text-decoration: none;
+    }
+    .pagination .active {
+        background-color: #46A3FF;
+        color: #fff;
+    }
+
+    .pagination .disabled {
+        color: #aaa;
+    }
+</style>
+
+<!-----------------middle1------------------>
+
+
+<div class="ny_location_box"><p><b>{if $lan=='en'}Position：{else /}位置：{/if}</b><a href="{:url('front/home/index')}" >{if $lan=='en'}Home{else /}首页{/if}</a> &gt; {switch $controller }
+    {case Profile}{if $lan=='en'}Company Profile{else /}公司介绍{/if}{/case}
+    {case Brands}{if $lan=='en'}Brands{else /}代理品牌{/if}{/case}
+    {case Product}{if $lan=='en'}Product{else /}产品中心{/if}{/case}
+    {case Contact}{if $lan=='en'}Contact Us{else /}联系我们{/if}{/case}
+    {default /}..
+    {/switch}&gt; </p></div>
+
+<div class="ny_mid_con">
+
+    <div class="left_product">
+        <div  class="inc_right_20">
+            <div  class="inc_right_1_1"><h2 style="margin: 0">{if $lan=='en'}Company Profile{else /}公司介绍{/if}</h2></div>
+            <div  class="inc_right_20_2" style="font-size:14px;">
+                <ul style="padding-left:0px;">
+                    <li><img src="/static/assets/front/images/bg2.jpg" width="5" height="9" /> &nbsp;&nbsp;&nbsp;<a href="{:url('front/profile/index')}#gsjj">
+                        {if $lan=='en'}Company Profile{else /}公司介绍{/if}</a></li>
+                    <li><img src="/static/assets/front/images/bg2.jpg" width="5" height="9" /> &nbsp;&nbsp;&nbsp;<a href="{:url('front/profile/index')}#jycl">
+                        {if $lan=='en'}Business Strategy{else /}经营策略{/if}</a></li>
+                    <li> <img src="/static/assets/front/images/bg2.jpg" width="5" height="9" /> &nbsp;&nbsp;&nbsp;<a href="{:url('front/profile/index')}#zysj">
+                        {if $lan=='en'}Important Notes{else /}重要记事{/if}</a></li>
+                    <li><img src="/static/assets/front/images/bg2.jpg" width="5" height="9" /> &nbsp;&nbsp;&nbsp;<a href="{:url('front/brands/index')}">
+                        {if $lan=='en'}Brands{else /}代理品牌{/if}</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div  class="right_line"></div>
+
+        <div  class="inc_right_1">
+
+            <div  class="inc_right_1_1"><h2 style="margin: 0">{if $lan=='en'}Brands{else /}代理品牌{/if}</h2></div>
+            <div  class="inc_right_1_2" style="font-size:14px;">
+                <ul style="padding-left:15px;">
+                    <li style="list-style-type:none;">{if $lan=='en'}Tel: 0755-83957712{else /}电话 0755-83957712 {/if}</li>
+                    <li style="list-style-type:none;">{if $lan=='en'}Fax: 0755-83957713{else /}传真 0755-83957713 {/if} </li>
+                    <li style="list-style-type:none;">{if $lan=='en'}Phone: 13728653331{else /}手机 13728653331 {/if}</li>
+                    <li style="list-style-type:none;">QQ 163790 </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="right_box">
+        <div class="top_box"></div>
+        <div class="main_box">
+            <!------------------------>
+
+            <div class="contact_box">
+                <div class="list-sort">
+                    <div class="form-input">
+                        <span class="tip" id="tipproid"></span>
+                        <i class="icon-search"></i>
+                        <input class="input-text" type="search" maxlength="50" id="txtSearchProductInfo" placeholder="{if $lan=='en'}Please enter the product model you want to search{else /}请输入您要搜索的产品型号{/if}">
+                    </div>
+                    <!--<div class="tum">
+                        <span class="mr-5">共有<span class="c-h" id="TotalCountID">19954</span>条库存</span>
+                    </div>-->
+                    <div class="sort">
+                        <button class="btn btn-light mr-10" id="submit-btn" type="button">{if $lan=='en'}Search{else /}搜索{/if}</button>
+                    </div>
+                </div>
+                <table class="table" id="js-tbList">
+                    <thead>
+                    <tr>
+                        <th width="220">{if $lan=='en'}Name{else /}型号/型号规格{/if}</th>
+                        <th width="35">&nbsp;</th>
+                        <th width="100">{if $lan=='en'}Category{else /}分类{/if}</th>
+                        <th width="100">{if $lan=='en'}Brand{else /}品牌{/if}</th>
+                        <th width="80">{if $lan=='en'}Package{else /}封装{/if}</th>
+                        <th width="80">{if $lan=='en'}Batch_num{else /}批号{/if}</th>
+                        <th class="text-right" width="50">{if $lan=='en'}Stock{else /}数量{/if}</th>
+                        <th class="text-right" width="50"></th>
+                        <!--<th class="text-right" width="55">{if $lan=='en'}Inquiry{else /}询价{/if}</th>-->
+                    </tr>
+                    </thead>
+                    <tbody id="js-productList">
+                    {volist name ='list' id='vo'}
+                    <tr>
+                        <td><span class="max-p-tit"><a
+                                href="#"
+                                target="_blank"><span>{$vo.name}</span></a></span>&nbsp;
+                        </td>
+                        <td class="table-view"></td>
+                        <td><p></p></td>
+                        <td><p>{$vo.brand}</p></td>
+                        <td><p>{$vo.package}</p></td>
+                        <td><p>{$vo.batch_num}</p></td>
+                        <td><p class="text-right">{$vo.stock}</p></td>
+                        <td><p class="text-right"></p></td>
+                        <td class="text-right"></td>
+                    </tr>
+                    {/volist}
+                    {if count($list)<1}
+                    <tr><td colspan="9" class="index-no-data">暂无数据</td></tr>
+                    {/if}
+                    </tbody>
+                </table>
+                <div class="list-page">
+                    {$list|raw}
+                </div>
+            </div>
+
+        </div>
+        <!------------------------>
+    </div>
+    <div class="foot_box"></div>
+</div>
+
+</div>
+
+
+<!-----------------middle1------------------>

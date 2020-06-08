@@ -1,0 +1,69 @@
+<!-- footer start -->
+<!-----------------foot0------------------>
+
+<!-- 底部 -->
+
+<div style="clear:both"></div>
+
+<div id="footer" style="background: #e2e2e2; color:#333333; font-size:14px; margin-top:5px; height:185px; padding-top:30px;">
+    <table width="1100" border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+
+        <tr>
+            <td width="474" rowspan="7" align="right">
+                <table width="91%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="21%" height="14">&nbsp;</td>
+                        <td width="69%">&nbsp;</td>
+                        <td width="10%">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <h1 style="line-height: 105px;
+    padding-right: 55px;">{if $lan=='en'}Norton Electronic Technology{else /}诺顿电子科技有限公司{/if}</h1>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>                </td>
+            <td width="543"></td>
+            <td width="83" rowspan="7">&nbsp;</td>
+        </tr>
+
+        <tr>
+            <td height="15">&nbsp;</td>
+        </tr>
+        <tr>
+            <td height="22" style="font-size:16px;">{if $lan=='en'}Address:28J,ABlock .Duhui 100,Zhonghang Rd Futian Area .Shenzhen{else /}公司地址：深圳市福田区中航路都会100号，阿布洛克28J{/if}</td>
+        </tr>
+        <tr>
+            <td height="22" style="font-size:16px;">{if $lan=='en'}Tel: 755-83957712  Fax：755-83957713{else /}总公司： 电话：755-83957712  传真：755-83957713{/if}</td>
+        </tr>
+        <tr>
+            <td height="22" style="font-size:16px;">{if $lan=='en'}All rights reserved Norton Electronic Technology{else /}版权所有归 诺顿电子科技有限公司{/if}</td>
+        </tr>
+
+        <tr>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</div>
+
+
+<!-- 底部 -->
+<!-----------------foot1------------------>
+
+
+</div>
+<script type="text/javascript">
+    $("#top-submit").click(function(){
+        var text = $("#topSearchProductInfo").val();
+        window.location = "/front/product/index?text="+text;
+    })
+    $("#submit-btn").click(function(){
+        var text = $("#txtSearchProductInfo").val();
+        window.location = "/front/product/index?text="+text;
+    })
+</script>
+</body>
+</html>

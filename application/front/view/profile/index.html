@@ -1,0 +1,108 @@
+
+<!-----------------middle1------------------>
+
+
+<div class="ny_location_box"><p><b>{if $lan=='en'}Position：{else /}位置：{/if}</b><a href="{:url('front/home/index')}" >{if $lan=='en'}Home{else /}首页{/if}</a> &gt; {switch $controller }
+    {case Profile}{if $lan=='en'}Company Profile{else /}公司介绍{/if}{/case}
+    {case Brands}{if $lan=='en'}Brands{else /}代理品牌{/if}{/case}
+    {case Product}{if $lan=='en'}Product{else /}产品中心{/if}{/case}
+    {case Contact}{if $lan=='en'}Contact Us{else /}联系我们{/if}{/case}
+    {default /}..
+    {/switch}&gt; </p></div>
+
+<div class="ny_mid_con">
+
+    <div class="left_product">
+        <div  class="inc_right_20">
+            <div  class="inc_right_1_1"><h2 style="margin: 0">{if $lan=='en'}Company Profile{else /}公司介绍{/if}</h2></div>
+            <div  class="inc_right_20_2" style="font-size:14px;">
+                <ul style="padding-left:0px;">
+                    <li><img src="/static/assets/front/images/bg2.jpg" width="5" height="9" /> &nbsp;&nbsp;&nbsp;<a href="{:url('front/profile/index')}#gsjj">
+                        {if $lan=='en'}Company Profile{else /}公司介绍{/if}</a></li>
+                    <li><img src="/static/assets/front/images/bg2.jpg" width="5" height="9" /> &nbsp;&nbsp;&nbsp;<a href="{:url('front/profile/index')}#jycl">
+                        {if $lan=='en'}Business Strategy{else /}经营策略{/if}</a></li>
+                    <li> <img src="/static/assets/front/images/bg2.jpg" width="5" height="9" /> &nbsp;&nbsp;&nbsp;<a href="{:url('front/profile/index')}#zysj">
+                        {if $lan=='en'}Important Notes{else /}重要记事{/if}</a></li>
+                    <li><img src="/static/assets/front/images/bg2.jpg" width="5" height="9" /> &nbsp;&nbsp;&nbsp;<a href="{:url('front/brands/index')}">
+                        {if $lan=='en'}Brands{else /}代理品牌{/if}</a></li>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <div  class="right_line"></div>
+
+        <div  class="inc_right_1">
+
+            <div  class="inc_right_1_1"><h2 style="margin: 0">{if $lan=='en'}Brands{else /}代理品牌{/if}</h2></div>
+            <div  class="inc_right_1_2" style="font-size:14px;">
+                <ul style="padding-left:15px;">
+                    <li style="list-style-type:none;">{if $lan=='en'}Tel: 0755-83957712{else /}电话 0755-83957712 {/if}</li>
+                    <li style="list-style-type:none;">{if $lan=='en'}Fax: 0755-83957713{else /}传真 0755-83957713 {/if} </li>
+                    <li style="list-style-type:none;">{if $lan=='en'}Phone: 13728653331{else /}手机 13728653331 {/if}</li>
+                    <li style="list-style-type:none;">QQ 163790 </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+
+    <div class="right_box">
+        <div class="top_box"></div>
+        <div class="main_box">
+            <!------------------------>
+            <div class="contact_box">
+                <a name="gsjj"></a>
+                <table width="88%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+                    <tr>
+                        <td height="54" align="center" valign="middle"><span  style="font-size:18px; font-weight:bold;">{if $lan=='en'}Company Profile{else /}公司介绍{/if}</span><hr style=" color:#999999; margin-top:10px;"></td>
+                    </tr>
+                    <tr>
+                        <td height="300" align="left" valign="top"  >
+                            <div style="line-height:200%; font-size:14px;font-family:"微软雅黑","宋体"; ">
+                            {if $lan=='en'}
+                            Norton electronicLarge stocks have an independent professional management of the plant throughout the world since the series. After many years of efforts, with many European and American dealers and OEM established a long-term stable relations of cooperation. We have credibility as the lifeline for the company and dedication to customer service
+                            Norton Electronic Technology Co., Ltd was established in 1999, the operating company is involved in all relevant areas such as e-electronic products, cash and more stock companies, brand models complete. Engaged in the sale of electronic products and components of the trade, the current extensive network of electronic procurement and makes Norton more than 3,000 domestic and foreign components suppliers and CEM, OEM has good relations of cooperation. To meet any shortage of customers for the active components and passive components Demand for an effective global manufacturers the fastest access to the shortage of electronic devices .We are very glad to send you our inventory if you need. We could be your bridge to do business with Chinese（HONGKONG） company。
+                            {else /}
+                            诺顿电子股份有限公司自成立以来，在全球范围内拥有独立的专业管理工厂。经过多年的努力，与众多欧美经销商和OEM建立了长期稳定的合作关系。我们以信誉为生命线，竭诚为客户服务
+                            诺顿电子科技有限公司成立于1999年，经营公司涉及电子产品、现金等多个相关领域的股份公司，品牌型号齐全。从事电子产品及元器件的销售贸易，目前电子采购网络广泛，使诺顿与国内外3000多家元器件供应商及CEM、OEM有着良好的合作关系。为满足客户对有源元件和无源元件的任何短缺需求，为有效的全球制造商提供最快的电子设备短缺途径。
+                            如果您需要，我们很高兴向您发送我们的库存。我们可以成为你和中国（香港）公司做生意的桥梁。
+                            {/if}
+                            <br>
+                            {if $lan=='en'}Tel: 0755-83957712{else /}电话 0755-83957712 {/if}<br>
+                            {if $lan=='en'}Fax: 0755-83957713{else /}传真 0755-83957713 {/if}<br>
+                            {if $lan=='en'}Phone: 13728653331{else /}手机 13728653331 {/if}<br>
+                            QQ: 163790
+                            <br>
+            										</td>
+            </tr>
+            </table>
+            <a name="jycl"></a><a name="zysj"></a>
+            <table width="93%" border="0" align="center" cellpadding="0" cellspacing="0" style="margin:0 auto;">
+                <tr>
+                    <td height="34" align="center" valign="middle"><span  style="font-size:18px; font-weight:bold; ">{if $lan=='en'}Important Notes{else /}重要记事{/if}</span><hr style=" color:#999999; margin-top:10px;"></td>
+                </tr>
+                <tr>
+                    <td height="253" align="left" valign="top"  ><div style="line-height:250%; font-size:14px;font-family:"微软雅黑","宋体"; ">
+                        <font color="#dd4822">{if $lan=='en'}No Notes{else /}暂无记事{/if}</font><br>
+
+        </td>
+        </tr>
+        </table>
+
+        <br>
+    </div>
+    <!------------------------>
+</div>
+<div class="foot_box"></div>
+</div>
+
+</div>
+
+
+<!-----------------middle1------------------>

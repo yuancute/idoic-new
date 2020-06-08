@@ -1,0 +1,149 @@
+<!DOCTYPE html >
+<html >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=8,9,10,11">
+    <meta name="keywords" content="诺顿电子科技有限公司"/>
+    <meta name="description" content=""/>
+    <title>诺顿电子科技有限公司</title>
+    <link href="/static/assets/front/css/home.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="/static/assets/front/css/style.css">
+    <script type="text/javascript" src="/static/assets/front/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="http://skype.tom.com/script/skypeCheck40.js"> </script>
+    <script src="/static/assets/front/js/banner.js" type="text/javascript"></script>
+
+
+
+    <style type="text/css">
+        .C_Header{
+            height:80px;
+            background-image:url(/static/assets/front/images/service.png)
+
+        }
+        .Content{
+            height:490px;
+            margin-top:23px;
+        }
+        .Content-Left{
+            width:320px;
+            height:380px;
+            margin-left:1px;
+            margin-right:65px;
+            float:left;
+            background:#fff;
+            -moz-box-shadow: 3px 3px 10px #d3d4d7; /* 老的 Firefox */
+            box-shadow: 3px 3px 10px #d3d4d7;
+        }
+        .Content-Middle{
+            width:320px;
+            height:380px;
+            margin-left:3px;
+            margin-right:0px;
+            float:left;
+            background:#fff;
+            -moz-box-shadow: 3px 3px 10px #d3d4d7; /* 老的 Firefox */
+            box-shadow: 3px 3px 10px #d3d4d7;
+        }
+        .C-top{ text-align:center;font-size:24px;color:#333333; padding-top:30px; padding-bottom:10px;}
+        .C-middle{ height:150px;text-align:center;}
+        .C-bottom{ height:160px; padding-left:35px; padding-right:25px;}
+
+        .container{border:1px solid #ddd;background: #f7f7f7;float:left;position: relative;overflow: hidden; height:250px;}
+        .mask{width:100%;height:250px;background:#000;position: absolute;display: none;opacity:0.5;}
+    </style>
+
+
+
+</head>
+
+<body>
+<div id="bodybox">
+
+    <!-----------------top0------------------>
+
+    <!-----------------top0------------------>
+    <!--<div class="topbig">
+        <div class="top_box">
+            <em><a href="#"><img src="/static/assets/front/images/logo.png" border="0"></a></em>
+            <div style="float:right; margin-top:10px;">
+                <img src="/static/assets/front/images/400.png" border="0">
+            </div>
+        </div>
+    </div>-->
+    <div class="header">
+        <div class="container1">
+            <div class="header-logo">
+                <a href="/front/home/index.html" title="">
+                    <img src="/static/assets/front/images/logo.png" width="145" height="38" alt="">
+                </a>
+            </div>
+            <div class="header-title">
+                <div class="header-name">
+                    <a href="/front/home/index.html" title="诺顿电子科技有限公司">
+                        诺顿电子科技有限公司                </a>
+                </div>
+            </div>
+            <div class="search">
+                <form class="form" onsubmit="return false" id="j-form-shop-search">
+                    <span class="tip j-tip"></span>
+                    <input type="text" class="input-text" maxlength="50" placeholder="{if $lan=='en'}Please enter the product model you want to search{else /}请输入您要搜索的产品型号{/if}" id="topSearchProductInfo">
+                    <input type="button" id="top-submit" class="btn btn-default btn-shop-search j-shop-search" value="{if $lan=='en'}Search{else /}搜索{/if}">
+                    {if $lan == "zh"}
+                    <a href="/front/home/index.html?lan=en"><input type="button" class="btn btn-primary j-all-search" value="English"></a>
+                    {else /}
+                    <a href="/front/home/index.html?lan=zh"><input type="button" class="btn btn-primary j-all-search" value="中文"></a>
+                    {/if}
+                </form>
+            </div>
+        </div>
+    </div>
+    <div style="width:100%;background-color: #0689db;" class="topbig2">
+        <div class="l_nav">
+            <ul>
+                <li class="{if $controller == 'Home'}bb{else /}aa{/if}"><a href="{:url('front/home/index')}" >{if $lan=='en'}Home{else /}公司首页{/if}</a></li>
+                <li class="{if $controller == 'Profile'}bb{else /}aa{/if}"><a href="{:url('front/profile/index')}" >{if $lan=='en'}Company Profile{else /}公司介绍{/if}</a></li>
+                <li class="{if $controller == 'Brands'}bb{else /}aa{/if}"><a href="{:url('front/brands/index')}" >{if $lan=='en'}Brands{else /}代理品牌{/if}</a></li>
+                <li class="{if $controller == 'Product'}bb{else /}aa{/if}"><a href="{:url('front/product/index')}" >{if $lan=='en'}Product{else /}产品中心{/if}</a></li>
+                <li class="{if $controller == 'Contact'}bb{else /}aa{/if}"><a href="{:url('front/contact/index')}" >{if $lan=='en'}Contact Us{else /}联系我们{/if}</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="ad_box">
+        <!-------------------ad0--------------->
+
+        <div class="h_ad_box" id="adbox">
+            <style type="text/css">
+
+                .banner{ width:100%; overflow:hidden; font-size:0;z-index:999;left:0; top:550; }
+
+
+            </style>
+            <div class="banner">
+                <link rel="stylesheet" href="/static/assets/front/css/amazeui.css" />
+
+
+                <script type="text/javascript" src="/static/assets/front/js/amazeui.js"></script>
+                <div data-am-widget="slider" class="am-slider am-slider-d2" data-am-slider='{&quot;directionNav&quot;:false}' >
+                    <ul class="am-slides">
+                        <li>
+                            <img src="/static/assets/front/images/banner01.jpg" >
+                        </li>
+                        <li>
+                            <img src="/static/assets/front/images/banner021.jpg" >
+                        </li>
+                        <li>
+                            <img src="/static/assets/front/images/banner3.jpg" >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-------------------ad1--------------->
+    </div>
+
+    <!-----------------top1------------------>
+
+    <!-----------------top1------------------>
